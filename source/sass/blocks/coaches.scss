@@ -1,0 +1,319 @@
+.coaches {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 118px 47px 64px;
+  margin: 0 auto;
+  max-width: 1366px;
+  width: 100%;
+
+  @include vp-1199 {
+    padding: 99px 101px 60px;
+  }
+
+  @include vp-767 {
+    padding: 0 47px 27px;
+  }
+}
+
+.coaches h2 {
+  font-family: $ff-bebas;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  padding: 0;
+  margin: 0;
+  margin-left: 58px;
+
+  @include vp-1199 {
+    align-self: center;
+    font-size: 42px;
+    line-height: 42px;
+    margin: 0;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.coaches__swiper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1160px;
+  width: 100%;
+  padding: 53px 0;
+
+  @include vp-1199 {
+    padding: 40px 0;
+    width: 566px;
+  }
+
+  @include vp-767 {
+    padding: 42px 0;
+    width: 226px;
+  }
+}
+
+.no-js.coaches__swiper {
+  max-width: $vp-1210;
+  padding: 0;
+  width: 100%;
+}
+
+.coaches__swiper-wrapper {
+  text-align: left;
+}
+
+.no-js .coaches__swiper-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 260px);
+  justify-content: center;
+  gap: 40px;
+  max-width: $vp-1210;
+
+  @include vp-1199 {
+    grid-template-columns: repeat(auto-fill, 268px);
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: repeat(auto-fill, 226px);
+  }
+}
+
+.coaches__slide {
+  position: relative;
+  width: 260px;
+  height: 294px;
+  cursor: pointer;
+
+  @include vp-1199 {
+    width: 268px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.coaches__button {
+  position: absolute;
+  z-index: 2;
+  top: 56%;
+  border: solid $color-dark-grey;
+  border-width: 0 1px 1px 0;
+  padding: 12px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+
+  @include vp-1199 {
+    top: 55%;
+  }
+
+  @include vp-767 {
+    top: 48.8%;
+    padding: 6px;
+  }
+
+  &--prev {
+    transform: rotate(135deg);
+    left: 3.8%;
+
+    @media (max-width: $vp-1200) {
+      left: 2%;
+    }
+
+    @include vp-1199 {
+      left: 50px;
+    }
+
+    @include vp-767 {
+      left: 18px;
+    }
+  }
+
+  &--next {
+    right: 3.8%;
+    transform: rotate(-45deg);
+
+    @media (max-width: $vp-1200) {
+      right: 2%;
+    }
+
+    @include vp-1199 {
+      right: 50px;
+    }
+
+    @include vp-767 {
+      right: 18px;
+    }
+  }
+}
+
+.coaches__slide h3 {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+  bottom: 23px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  margin: 0;
+  color: $color-white;
+
+  @include vp-1199 {
+    bottom: 22px;
+    left: 1%;
+  }
+}
+
+.coaches__slide img {
+  object-fit: cover;
+  width: 260px;
+  height: 294px;
+
+  @include vp-1199 {
+    width: 268px;
+    height: 294px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.no-js .coaches__button {
+  display: none;
+}
+
+.coach__information {
+  display: none;
+  position: absolute;
+  width: 260px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  padding: 75px 45px 20px 55px;
+  background-color: $color-sapphire-with-opacity-89;
+
+  @include vp-1199 {
+    width: 268px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+    padding: 66px 30px 10px 34px;
+  }
+}
+
+.coach__information p {
+  text-align: center;
+  color: $color-spindle;
+  margin: 0;
+  margin-bottom: 33px;
+  margin-left: -5px;
+  width: 100%;
+
+  @include vp-1199 {
+    margin-left: -10px;
+  }
+
+  @include vp-767 {
+    margin-left: -2px;
+    margin-bottom: 32px;
+  }
+}
+
+.coach__information-list {
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  pointer-events: auto;
+  height: 130px;
+}
+
+.coach__information-item {
+  position: relative;
+  margin-bottom: 13px;
+  padding-left: 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 5px;
+    left: 0;
+    border-radius: 50%;
+    background-color: $color-white;
+
+    @include vp-767 {
+      top: 6px;
+    }
+  }
+}
+
+.is-touched .coach__information {
+  display: block;
+}
+
+.is-touched {
+  box-shadow: 0 0 40px 0 $color-resolution-blue-with-opacity-20;
+}
+
+.is-touched h3 {
+  top: 50px;
+  left: 0;
+  margin-left: 0;
+
+  @include vp-1199 {
+    top: 52px;
+    margin-left: -5px;
+    left: 0;
+  }
+
+  @include vp-767 {
+    top: 42px;
+    margin-left: 0;
+  }
+}
+
+
+@media (hover: hover), screen and (min-width: 0\0) {
+  .coaches__slide:hover .coach__information,
+  .coaches__slide:focus .coach__information {
+    display: block;
+  }
+
+  .coaches__slide:hover h3,
+  .coaches__slide:focus h3 {
+    left: 0;
+    top: 50px;
+    margin-left: 0;
+  }
+
+  .coaches__slide:hover,
+  .coaches__slide:focus {
+    box-shadow: 0 0 40px 0 $color-resolution-blue-with-opacity-20;
+  }
+
+  .coaches__slide:focus .coach__information {
+    outline: $color-white auto 3px;
+    outline-offset: -5px;
+  }
+}

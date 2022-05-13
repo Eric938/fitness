@@ -1,0 +1,265 @@
+.benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 25px 110px;
+  text-align: left;
+  width: 100%;
+  background-color: $color-ghost-white;
+
+  @include vp-1199 {
+    padding: 100px 5.8% 93px;
+  }
+
+  @include vp-767 {
+    padding: 70px 0 62px;
+    text-align: center;
+  }
+}
+
+.benefits h2 {
+  font-family: $ff-bebas;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 70px;
+
+  @include vp-1199 {
+    align-self: center;
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 43px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 45px;
+  }
+}
+
+.benefits__cards {
+  display: grid;
+  grid-template-columns: 370px 240px 370px;
+  grid-column-gap: 32px;
+  grid-row-gap: 157px;
+  justify-content: center;
+  width: 100%;
+  max-width: $vp-1210;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 44px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
+
+.benefits__card {
+  display: flex;
+  padding-left: 30px;
+  margin-top: -2px;
+
+  @include vp-1199 {
+    padding-left: 0;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.benefits__info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.benefits__info-number {
+  font-size: 71px;
+  font-weight: 700;
+  line-height: 57px;
+  margin-bottom: 3px;
+  margin-top: -2px;
+  background: linear-gradient(142.51deg, $color-crimson 0%, $color-cobalt-for-number 87.33%);
+  background-clip: text;
+  color: transparent;
+
+  @include vp-1199 {
+    font-size: 58px;
+    line-height: 58px;
+    margin: 0;
+  }
+
+  @include vp-767 {
+    background: linear-gradient(127.61deg, $color-crimson 0%, $color-cobalt-for-number 45.58%);
+    background-clip: text;
+  }
+}
+
+.benefits__info-measure {
+  font-size: 14px;
+  line-height: 23px;
+  color: $color-persian-blue;
+
+  @include vp-1199 {
+    line-height: 14px;
+  }
+}
+
+
+.benefits__description {
+  text-align: left;
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.benefits__description h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 12px;
+  color: $color-sapphire;
+  padding: 0;
+
+  @include vp-1199 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 3px;
+  }
+}
+
+.benefits__description p {
+  font-weight: 200;
+  line-height: 22px;
+  color: $color-sapphire;
+  margin: 0;
+  max-width: 230px;
+
+  @include vp-1199 {
+    max-width: 100%;
+  }
+
+  @include vp-767 {
+    width: 72%;
+  }
+}
+
+.benefits__middle-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-row: 1/span 2;
+  grid-column: 2/3;
+  background-color: $color-resolution-blue;
+  color: $color-white;
+  padding: 54px 34px;
+  margin-bottom: 8px;
+  text-align: center;
+
+  @include vp-1199 {
+    grid-column: 1/-1;
+    grid-row: auto/auto;
+    margin: 0 17.3%;
+    padding: 33px 33px 37px;
+  }
+
+  @include vp-767 {
+    margin: 8px 0 5px;
+    padding: 37px 33px 43px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 340px;
+    top: 50%;
+    left: 300px;
+    height: 2px;
+    background-color: $color-crimson;
+    opacity: 0.2;
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 340px;
+    top: 50%;
+    right: 300px;
+    height: 2px;
+    background-color: $color-crimson;
+    opacity: 0.2;
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+}
+
+.benefits__middle-card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 39px;
+  margin: 0;
+  margin-bottom: 34px;
+
+  @include vp-1199 {
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 14px;
+  }
+
+  @include vp-767 {
+    line-height: 24px;
+  }
+}
+
+.benefits__middle-card p {
+  margin: 0;
+
+  @include vp-1199 {
+    width: 50%;
+  }
+
+  @include vp-767 {
+    width: 70%;
+  }
+}
+
+.benefits__number {
+  font-size: 74px;
+  font-weight: 700;
+  line-height: 74px;
+  margin-bottom: 1px;
+
+  @include vp-1199 {
+    margin-bottom: 0;
+    margin-left: -3px;
+  }
+}

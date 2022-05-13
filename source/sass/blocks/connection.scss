@@ -1,0 +1,108 @@
+.connection {
+  display: flex;
+  text-align: left;
+  border-top: 1px solid $color-light-slate-grey;
+  width: 100%;
+
+  @include vp-1199 {
+    flex-direction: column;
+    border: none;
+  }
+}
+
+.connection h2 {
+  font-family: $ff-bebas;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 36px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 28px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 31px;
+  }
+}
+
+.connection__feedback-form,
+.connection__contacts {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 68px 20px 47px;
+
+  @include vp-1199 {
+    padding: 0;
+    width: 100%;
+    align-self: center;
+  }
+
+  @include vp-767 {
+    padding: 69px 4.7%;
+    align-self: flex-start;
+  }
+}
+
+.connection__contacts h2 {
+  margin-bottom: 42px;
+
+  @include vp-1199 {
+    margin-bottom: 32px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 35px;
+  }
+}
+
+.connection__contacts {
+  padding-left: 120px;
+
+  @include vp-1199 {
+    padding: 69px 10px 43px 100px;
+    width: 700px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding-bottom: 43px;
+  }
+}
+
+.connection__form-wrapper {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+
+  @include vp-1199 {
+    align-self: center;
+    width: 100%;
+  }
+}
+
+.connection__feedback-form {
+  color: $color-white;
+  background-color: $color-sapphire;
+  padding-right: 169px;
+
+  @include vp-1199 {
+    padding: 70px 161px 68px 132px;
+  }
+}
+
+.connection__form {
+  width: 410px;
+
+  @include vp-1199 {
+    width: 100%;
+  }
+}

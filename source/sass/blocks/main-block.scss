@@ -1,0 +1,192 @@
+.main-block {
+  display: flex;
+  justify-content: center;
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, $color-venetian-red -46.69deg, $color-dark-cerulean 32.24deg, $color-venetian-red 313.31deg, $color-dark-cerulean 392.24deg);
+
+  @include vp-1199 {
+    justify-content: space-between;
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, $color-venetian-red -46.69deg, $color-dark-cerulean 32.24deg, $color-venetian-red 313.31deg, $color-dark-cerulean 392.24deg);
+    padding: 0 5.8%;
+  }
+
+  @include vp-767 {
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, $color-venetian-red -46.69deg, $color-dark-cerulean 32.24deg, $color-venetian-red 313.31deg, $color-dark-cerulean 392.24deg);
+    padding: 0 4.7%;
+  }
+}
+
+.main-block__fitness-title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 162px 0 45px;
+  margin-right: 64px;
+  text-align: right;
+  color: $color-white;
+  width: 395px;
+
+  @include vp-1199 {
+    padding: 131px 0 45px;
+    margin-right: 0;
+    width: 48%;
+  }
+
+  @include vp-767 {
+    padding: 110px 0 78px;
+    width: 100%;
+  }
+}
+
+.main-block__fitness-title h2 {
+  font-family: $ff-bebas;
+  font-size: 109px;
+  font-weight: 700;
+  line-height: 109px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 55px;
+
+
+  @include vp-1199 {
+    font-size: 86px;
+    line-height: 86px;
+    margin-bottom: 40px;
+  }
+
+  @include vp-767 {
+    font-size: 78px;
+    line-height: 78px;
+    margin-bottom: 43px;
+  }
+}
+
+.main-block__fitness-title span {
+  font-family: $ff-bebas;
+  font-size: 49px;
+  font-weight: 400;
+  line-height: 59px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+
+
+  @include vp-1199 {
+    font-size: 34px;
+    line-height: 41px;
+    margin-bottom: 4px;
+  }
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 8px;
+  }
+}
+
+.main-block__services-list {
+  position: absolute;
+  top: 356px;
+  left: 1px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  width: 130px;
+
+  @include vp-1199 {
+    top: 269px;
+    left: -2px;
+    width: 115px;
+  }
+
+  @include vp-767 {
+    left: auto;
+    right: 178px;
+    top: 233px;
+  }
+}
+
+.main-block__button {
+  width: 231px;
+  align-self: flex-end;
+  padding: 20px 8px;
+
+  @include vp-1199 {
+    width: 185px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:focus {
+      outline: $color-torch-red solid 3px;
+    }
+  }
+}
+
+.main-block img {
+  object-fit: cover;
+  padding: 51px 0;
+
+  @include vp-1199 {
+    padding: 0;
+    margin: 82px 5.8% 82px 0;
+    width: 324px;
+    height: 390px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.main-block__social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 78px;
+  align-self: flex-end;
+  width: 20%;
+  max-width: 200px;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.main-block__social-list li {
+  padding-bottom: 10px;
+  text-align: right;
+}
+
+.main-block__social-list a {
+  font-family: $ff-roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $color-white;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      outline: $color-dark-cerulean auto 2px;
+      outline-offset: 2px;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+    color: $color-dark-cerulean;
+  }
+}

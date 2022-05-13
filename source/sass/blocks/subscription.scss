@@ -1,0 +1,323 @@
+.subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url("../img/content/weight-plates.png"), linear-gradient(180deg, $color-ghost-white 0%, $color-ghost-white 88%, $color-white 88%, $color-white 100%);
+  background-position: top 106% right;
+  background-repeat: no-repeat;
+  padding: 118px 25px 240px;
+  width: 100%;
+
+  @media (min-width: $vp-1200) {
+    @include retina {
+      background-image: url("../img/content/weight-plates-2x.png"), linear-gradient(180deg, $color-ghost-white 0%, $color-ghost-white 88%, $color-white 88%, $color-white 100%);
+      background-size: 290px 490px, 100% 100%;
+    }
+  }
+
+  @include vp-1199 {
+    padding: 100px 21% 200px;
+    background-image: url("../img/content/weight-plates-tablet.png"), linear-gradient(180deg, $color-ghost-white 0%, $color-ghost-white 94.6%, $color-white 94.6%, $color-white 100%);
+    background-position: top 101.8% right;
+
+    @include retina {
+      background-image: url("../img/content/weight-plates-tablet-2x.png"), linear-gradient(180deg, $color-ghost-white 0%, $color-ghost-white 88%, $color-white 88%, $color-white 100%);
+      background-size: 350px 450px, 100% 100%;
+    }
+  }
+
+  @include vp-767 {
+    padding: 70px 0;
+    background-image: none;
+    background-color: $color-ghost-white;
+  }
+}
+
+.subscription h2 {
+  font-family: $ff-bebas;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  padding: 0 10px;
+  margin: 0;
+  margin-bottom: 15px;
+  max-width: $vp-1210;
+  width: 100%;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 10px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 5px;
+  }
+}
+
+.subscription__tabs-titles {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 30px;
+  list-style: none;
+  margin: 0 auto 39px;
+  padding: 0;
+  overflow-x: auto;
+  max-width: $vp-1210;
+  width: max-content;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 46px);
+    bottom: 0;
+    left: 23px;
+    height: 2px;
+    background-color: $color-grey-with-opacity-20;
+
+    @include vp-1199 {
+      width: calc(100% - 110px);
+      left: 55px;
+      bottom: 20px;
+    }
+
+    @include vp-767 {
+      width: calc(100% - 27px);
+      left: 15px;
+    }
+  }
+
+  @include vp-1199 {
+    flex-wrap: wrap;
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  @include vp-767 {
+    width: 320px;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+}
+
+.subscription__tab-title {
+  padding: 20px 23px 11px;
+  opacity: 0.5;
+  cursor: pointer;
+
+  @include vp-1199 {
+    padding: 20px 27px 11px;
+  }
+
+  @include vp-767 {
+    padding: 17px 20px 13px 15px;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      outline: $color-dark-cerulean auto 2px;
+      outline-offset: -5px;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+    outline: none;
+  }
+}
+
+.subscription__tab-title.is-active {
+  opacity: 1;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 46px);
+    bottom: 0;
+    left: 23px;
+    height: 2px;
+    background-color: $color-crimson;
+
+    @include vp-1199 {
+      width: calc(100% - 54px);
+      left: 27px;
+    }
+
+    @include vp-767 {
+      width: calc(100% - 30px);
+      left: 15px;
+    }
+  }
+}
+
+.subscription__tab {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 1160px;
+
+  @include vp-1199 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @include vp-767 {
+    padding: 0 4.7%;
+    gap: 37px;
+  }
+}
+
+.subscription__tab.is-active {
+  display: grid;
+}
+
+.no-js .subscription__tab {
+  display: grid;
+  margin-bottom: 30px;
+}
+
+.subscription__card {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  padding: 58px 70px 60px;
+  max-width: 360px;
+  background-color: $color-white;
+  border: 7px solid transparent;
+
+  @include vp-1199 {
+    padding: 56px 112px 61px 111px;
+    max-width: 100%;
+  }
+
+  @include vp-767 {
+    padding: 43px 33px 46px;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      border-image: linear-gradient(148.82deg, $color-crimson 0.85%, $color-smalt 100%) 1;
+    }
+  }
+}
+
+@media (hover: hover), screen and (min-width: 0\0) {
+  .subscription__card:hover .subscription__button {
+    background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
+    color: $color-white;
+    border: none;
+    padding: 26px 10px;
+  }
+}
+
+.subscription__card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 29px;
+  margin: 0;
+  margin-bottom: 10px;
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+.subscription__card p {
+  margin: 0;
+  margin-bottom: 20px;
+  color: $color-chambray;
+
+  @include vp-767 {
+    margin-bottom: 10px;
+  }
+}
+
+.subscription__price-back {
+  display: block;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 130px;
+  color: $color-whisper;
+
+  @include vp-767 {
+    font-size: 80px;
+    line-height: 120px;
+  }
+}
+
+.subscription__price {
+  position: relative;
+  display: block;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+  margin: -85px 0 33px;
+  color: $color-egyptian-blue;
+  align-self: center;
+  width: min-content;
+  padding-right: 46px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 0;
+    width: 30px;
+    height: 42px;
+    background-image: url("../img/svg/ruble.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include vp-767 {
+      top: 20px;
+      width: 24px;
+      height: 33px;
+      background-size: 24px 33px;
+    }
+  }
+
+  @include vp-767 {
+    font-size: 48px;
+    line-height: 72px;
+    padding-right: 34px;
+    margin: -77px 0 30px;
+  }
+}
+
+.subscription__button {
+  color: $color-sapphire;
+  border: 2px solid $color-sapphire;
+
+  &:focus {
+    outline: 2px solid $color-white;
+    background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
+    color: $color-white;
+    border: none;
+    padding: 26px 10px;
+  }
+}

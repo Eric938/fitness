@@ -1,0 +1,89 @@
+.header {
+  flex-shrink: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.header__wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 29px 25px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: $vp-1210;
+
+  @include vp-1199 {
+    padding: 39px 5.8% 25px;
+  }
+
+  @include vp-767 {
+    padding: 19px 4.7%;
+  }
+}
+
+.header__logo--main {
+  pointer-events: none;
+}
+
+.header__logo img {
+  width: 87px;
+  height: 20px;
+
+  @include vp-1199 {
+    width: 80px;
+    height: 18px;
+  }
+
+  @include vp-767 {
+    width: 67px;
+    height: 16px;
+  }
+}
+
+.header__tel {
+  font-family: $ff-bebas;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: $color-white;
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+      color: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
+    }
+
+    &:focus {
+      outline: $color-dark-cerulean solid 2px;
+      outline-offset: 2px;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+    color: $color-dark-cerulean;
+    outline: none;
+  }
+
+  @include vp-1199 {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

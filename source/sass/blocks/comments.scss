@@ -1,0 +1,213 @@
+.comments {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 25px 67px;
+  text-align: left;
+  width: 100%;
+  max-width: $vp-1210;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    padding: 0 5.8% 30px;
+    align-items: center;
+  }
+
+  @include vp-767 {
+    padding: 69px 4.7% 0;
+    text-align: center;
+  }
+}
+
+.comments h2 {
+  font-family: $ff-bebas;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.comments__swiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 664px;
+  padding: 52px;
+
+  @include vp-1199 {
+    width: 95%;
+    padding: 40px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding: 42px 32px 40px;
+  }
+}
+
+.comments__swiper-wrapper {
+  width: 560px;
+
+  @include vp-1199 {
+    width: 100%;
+  }
+}
+
+.no-js.comments__swiper {
+  padding: 30px 0;
+  justify-content: center;
+}
+
+.no-js .comments__swiper-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.no-js > .comments__swiper-wrapper > .comments__slide {
+  margin: 0 auto;
+}
+
+.no-js .comments__button {
+  display: none;
+}
+
+.comments__button {
+  position: absolute;
+  z-index: 2;
+  top: 45.4%;
+  border: solid $color-dark-grey;
+  border-width: 0 1px 1px 0;
+  padding: 12px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+
+  @include vp-1199 {
+    top: 44.9%;
+  }
+
+  @include vp-767 {
+    width: 10px;
+    height: 10px;
+    padding: 6px;
+    top: 55.5%;
+  }
+
+  &--prev {
+    transform: rotate(135deg);
+    left: 274px;
+
+    @include vp-1199 {
+      left: 50px;
+    }
+
+    @include vp-767 {
+      left: 17px;
+    }
+  }
+
+  &--next {
+    right: 274px;
+    transform: rotate(-45deg);
+
+    @include vp-1199 {
+      right: 50px;
+    }
+
+    @include vp-767 {
+      right: 17px;
+    }
+  }
+}
+
+.comments__button.swiper-button-disabled {
+  display: none;
+  pointer-events: none;
+}
+
+.comments__slide {
+  position: relative;
+  display: flex;
+  padding: 59px 62px 29px;
+  margin-bottom: 30px;
+  width: 560px;
+  color: $color-white;
+  background: $color-resolution-blue;
+  box-shadow: 0 0 40px 0 $color-resolution-blue-with-opacity-20;
+
+  @include vp-1199 {
+    width: 83.5%;
+    padding: 59px 60px 58px 65px;
+  }
+
+  @include vp-767 {
+    width: 78%;
+    padding: 40px 25px 35px;
+    flex-direction: column;
+  }
+}
+
+.comments__avatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 35px;
+  margin-top: 2px;
+
+  @include vp-767 {
+    height: 68px;
+    width: 68px;
+    margin: 0 15px 16px;
+  }
+}
+
+.comments__info {
+  width: 80%;
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.comments__info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 17px;
+
+  @include vp-1199 {
+    margin-bottom: 18px;
+  }
+
+  @include vp-767 {
+    line-height: 25px;
+    text-align: left;
+    position: absolute;
+    top: 50px;
+    left: 123px;
+    width: 35%;
+  }
+}
+
+.comments__info p {
+  line-height: 22px;
+  margin: 0;
+}
