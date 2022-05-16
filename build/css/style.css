@@ -1537,6 +1537,7 @@ svg path {
 }
 
 .coach__information-list {
+  position: relative;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
@@ -1578,6 +1579,7 @@ svg path {
   top: 50px;
   left: 0;
   margin-left: 0;
+  bottom: auto;
 }
 
 .benefits {
@@ -2389,6 +2391,7 @@ svg path {
     left: 0;
     top: 50px;
     margin-left: 0;
+    bottom: auto;
   }
 
   .coaches__slide:hover,
@@ -2440,13 +2443,13 @@ svg path {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   .coaches__button--prev {
-    left: 2%;
+    left: 1%;
   }
 
   .coaches__button--next {
-    right: 2%;
+    right: 1%;
   }
 }
 
@@ -3578,13 +3581,23 @@ svg path {
   }
 
   .footer__navigation {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (130px)[2];
+    grid-template-columns: repeat(2, 130px);
+    -ms-grid-rows: (-webkit-min-content)[3];
+    -ms-grid-rows: (min-content)[3];
+    grid-template-rows: repeat(3, -webkit-min-content);
+    grid-template-rows: repeat(3, min-content);
+    grid-column-gap: 31px;
+    grid-auto-flow: column;
     width: 100%;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    margin-bottom: 17px;
   }
 
   .footer__logo {
     margin: 0;
+    margin-bottom: 21px;
     width: 68px;
   }
 
@@ -3593,26 +3606,9 @@ svg path {
     height: 16px;
   }
 
-  .navigation {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (-webkit-max-content)[2];
-    -ms-grid-columns: (max-content)[2];
-    grid-template-columns: repeat(2, -webkit-max-content);
-    grid-template-columns: repeat(2, max-content);
-    -ms-grid-rows: (-webkit-min-content)[3];
-    -ms-grid-rows: (min-content)[3];
-    grid-template-rows: repeat(3, -webkit-min-content);
-    grid-template-rows: repeat(3, min-content);
-    grid-auto-columns: none;
-    grid-column-gap: 75px;
-    grid-row-gap: 19px;
-    grid-auto-flow: column;
-    margin-bottom: 36px;
-  }
-
   .navigation__item {
     margin: 0;
+    margin-bottom: 19px;
     font-size: 16px;
     line-height: 19px;
   }

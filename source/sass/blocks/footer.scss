@@ -34,8 +34,13 @@
   }
 
   @include vp-767 {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: repeat(3, min-content);
+    grid-column-gap: 31px;
+    grid-auto-flow: column;
     width: 100%;
-    flex-wrap: wrap;
+    margin-bottom: 17px;
   }
 }
 
@@ -55,6 +60,7 @@
 
   @include vp-767 {
     margin: 0;
+    margin-bottom: 21px;
     width: 68px;
   }
 }
