@@ -4,7 +4,6 @@
     &:hover,
     &:focus {
       opacity: 0.8;
-      border-color: $color-dark-cerulean;
     }
 
     &:focus {
@@ -14,7 +13,6 @@
   }
 
   &:active {
-    border-color: $color-dark-cerulean;
-    outline: none;
+    opacity: 0.6;
   }
 }

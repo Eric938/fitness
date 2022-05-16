@@ -819,8 +819,7 @@ svg path {
 
 .swiper-button-prev:active,
 .swiper-button-next:active {
-  border-color: #003d85;
-  outline: none;
+  opacity: 0.6;
 }
 
 .main-block {
@@ -1467,27 +1466,24 @@ svg path {
 .coaches__button {
   position: absolute;
   z-index: 2;
-  top: 56%;
-  border: solid #afafaf;
-  border-width: 0 1px 1px 0;
-  padding: 12px;
-  width: 16px;
-  height: 16px;
+  top: 55.3%;
+  background-image: url("../img/svg/next.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 34px;
+  width: 18px;
+  height: 34px;
   cursor: pointer;
 }
 
 .coaches__button--prev {
-  -webkit-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  transform: rotate(135deg);
-  left: 3.8%;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  left: 3.55%;
 }
 
 .coaches__button--next {
-  right: 3.8%;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  right: 3.55%;
 }
 
 .coaches__slide h3 {
@@ -1537,7 +1533,6 @@ svg path {
 }
 
 .coach__information-list {
-  position: relative;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
@@ -2323,7 +2318,6 @@ svg path {
   .swiper-button-next:hover,
   .swiper-button-next:focus {
     opacity: 0.8;
-    border-color: #003d85;
   }
 
   .swiper-button-prev:focus,
@@ -2732,15 +2726,15 @@ svg path {
   }
 
   .coaches__button {
-    top: 55%;
+    top: 54.1%;
   }
 
   .coaches__button--prev {
-    left: 50px;
+    left: 45px;
   }
 
   .coaches__button--next {
-    right: 50px;
+    right: 45px;
   }
 
   .coaches__slide h3 {
@@ -3291,16 +3285,18 @@ svg path {
   }
 
   .coaches__button {
-    top: 48.8%;
-    padding: 6px;
+    top: 48.4%;
+    width: 10px;
+    height: 19px;
+    background-size: 10px 19px;
   }
 
   .coaches__button--prev {
-    left: 18px;
+    left: 16px;
   }
 
   .coaches__button--next {
-    right: 18px;
+    right: 16px;
   }
 
   .coaches__slide img {

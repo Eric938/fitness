@@ -105,54 +105,55 @@
 .coaches__button {
   position: absolute;
   z-index: 2;
-  top: 56%;
-  border: solid $color-dark-grey;
-  border-width: 0 1px 1px 0;
-  padding: 12px;
-  width: 16px;
-  height: 16px;
+  top: 55.3%;
+  background-image: url("../img/svg/next.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 34px;
+  width: 18px;
+  height: 34px;
   cursor: pointer;
 
   @include vp-1199 {
-    top: 55%;
+    top: 54.1%;
   }
 
   @include vp-767 {
-    top: 48.8%;
-    padding: 6px;
+    top: 48.4%;
+    width: 10px;
+    height: 19px;
+    background-size: 10px 19px;
   }
 
   &--prev {
-    transform: rotate(135deg);
-    left: 3.8%;
+    transform: rotate(180deg);
+    left: 3.55%;
 
     @media (max-width: 1350px) {
       left: 1%;
     }
 
     @include vp-1199 {
-      left: 50px;
+      left: 45px;
     }
 
     @include vp-767 {
-      left: 18px;
+      left: 16px;
     }
   }
 
   &--next {
-    right: 3.8%;
-    transform: rotate(-45deg);
+    right: 3.55%;
 
     @media (max-width: 1350px) {
       right: 1%;
     }
 
     @include vp-1199 {
-      right: 50px;
+      right: 45px;
     }
 
     @include vp-767 {
-      right: 18px;
+      right: 16px;
     }
   }
 }
@@ -236,7 +237,6 @@
 }
 
 .coach__information-list {
-  position: relative;
   font-size: 14px;
   line-height: 21px;
   color: $color-white;
