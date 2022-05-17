@@ -56,24 +56,11 @@ const addEventFocusOnTitles = () => {
       if (tabMonths.length) {
         for (let i = 0; i < tabMonths.length; i++) {
           const monthsTabAttribute = tabMonths[i].getAttribute('data-tab-months');
-          const tabButtons = tabMonths[i].querySelectorAll('[data-tab-button]');
 
           if (activeTabAttribute === monthsTabAttribute) {
             addClassIsActive(tabMonths[i]);
           } else {
             removeClassIsActive(tabMonths[i]);
-          }
-
-          if (tabButtons.length) {
-            tabTitles[i].addEventListener('focusout', () => {
-              tabButtons[0].focus();
-            });
-
-            tabButtons[tabButtons.length - 1].addEventListener('focusout', () => {
-              if (i !== tabTitles.length - 1) {
-                tabTitles[i + 1].focus();
-              }
-            });
           }
         }
       }
