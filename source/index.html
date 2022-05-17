@@ -62,42 +62,46 @@
         <div class="gym__description">
           <h2>Тренажерный зал</h2>
           <span>Просторный зал площадью 900 кв/м</span>
-          <p>Supergym – самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p>Supergym – самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для&nbsp;укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для&nbsp;всех спортсменов.</p>
           <div class="gym__more-description">
-            <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+            <p>В&nbsp;зале расположены отдельная зона для&nbsp;Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для&nbsp;различных видов групповых занятий.</p>
           </div>
         </div>
-        <picture>
-          <!-- 1х: 320px; 2x: 640px -->
-          <source type="image/webp" media="(max-width: 767px)" srcset="img/content/gym-mobile.webp 1x, img/content/gym-mobile-2x.webp 2x">
+        <div class="gym__trainer">
+          <picture>
+            <!-- 1х: 320px; 2x: 640px -->
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/gym-mobile.webp 1x, img/content/gym-mobile-2x.webp 2x">
 
-          <!-- 1х: 678px; 2x: 1356px -->
-          <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/gym-tablet.webp 1x, img/content/gym-tablet-2x.webp 2x">
+            <!-- 1х: 678px; 2x: 1356px -->
+            <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/gym-tablet.webp 1x, img/content/gym-tablet-2x.webp 2x">
 
-          <!-- 1х: 660px; 2x: 1320px -->
-          <source type="image/webp" srcset="img/content/gym.webp 1x, img/content/gym-2x.webp 2x">
+            <!-- 1х: 660px; 2x: 1320px -->
+            <source type="image/webp" srcset="img/content/gym.webp 1x, img/content/gym-2x.webp 2x">
 
 
-          <!-- 1х: 660px; 2x: 1320px -->
-          <img class="gym__trainer" src="img/content/gym.jpg" width="660" height="401" srcset="img/content/gym-2x.jpg 2x" alt="черные тренажеры в белом помещении" loading="lazy">
-        </picture>
+            <!-- 1х: 660px; 2x: 1320px -->
+            <img src="img/content/gym.jpg" width="660" height="401" srcset="img/content/gym-2x.jpg 2x" alt="черные тренажеры в белом помещении" loading="lazy">
+          </picture>
+        </div>
         <div class="gym__video" data-video-container>
           <div class="gym__video-preview no-js" data-preview>
-            <picture>
-              <!-- 1х: 320px; 2x: 640px -->
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/content/for-video-mobile.webp 1x, img/content/for-video-mobile-2x.webp 2x">
+            <div class="gym__preview">
+              <picture>
+                <!-- 1х: 320px; 2x: 640px -->
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/content/for-video-mobile.webp 1x, img/content/for-video-mobile-2x.webp 2x">
 
-              <!-- 1х: 266px; 2x: 532px -->
-              <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/for-video-tablet.webp 1x, img/content/for-video-tablet-2x.webp 2x">
+                <!-- 1х: 266px; 2x: 532px -->
+                <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/for-video-tablet.webp 1x, img/content/for-video-tablet-2x.webp 2x">
 
-              <!-- 1х: 364px; 2x: 728px -->
-              <source type="image/webp" srcset="img/content/for-video.webp 1x, img/content/for-video-2x.webp 2x">
+                <!-- 1х: 364px; 2x: 728px -->
+                <source type="image/webp" srcset="img/content/for-video.webp 1x, img/content/for-video-2x.webp 2x">
 
 
-              <!-- 1х: 364px; 2x: 728px -->
-              <img class="gym__preview" src="img/content/for-video.jpg" width="364" height="228" srcset="img/content/for-video-2x.jpg 2x" alt="тренажеры">
-            </picture>
-            <button class="gym__play-button" aria-label="воспроизвести видео" data-play-button tabindex="-1"><img class="gym__button-img" src="img/svg/play-button.svg" width="100" height="100" alt="красно-синяя кнопка воспроизведения"></button>
+                <!-- 1х: 364px; 2x: 728px -->
+                <img src="img/content/for-video.jpg" width="364" height="228" srcset="img/content/for-video-2x.jpg 2x" alt="тренажеры">
+              </picture>
+            </div>
+            <button class="gym__play-button" aria-label="воспроизвести видео" data-play-button tabindex="-1"><img  src="img/svg/play-button.svg" width="100" height="100" alt="красно-синяя кнопка воспроизведения"></button>
           </div>
           <div class="gym__video-pause" data-video-pause tabindex="0"></div>
           <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?enablejsapi=1&rel=0&controls=0&version=3&loop=1&playlist=9TZXsZItgdw;" title="видео о html academy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-video></iframe>
@@ -119,21 +123,21 @@
             <p>12 занятий</p>
             <span class="subscription__price-back">5000</span>
             <span class="subscription__price">5000</span>
-            <a class="subscription__button button" href="#">Купить абонемент</a>
+            <a class="subscription__button button" href="#" data-tab-button>Купить абонемент</a>
           </li>
           <li class="subscription__card">
             <h3>Дневной</h3>
             <p>с&nbsp;8:00 до&nbsp;17:00</p>
             <span class="subscription__price-back">1700</span>
             <span class="subscription__price">1700</span>
-            <a class="subscription__button button" href="#">Купить абонемент</a>
+            <a class="subscription__button button" href="#" data-tab-button>Купить абонемент</a>
           </li>
           <li class="subscription__card">
             <h3>Полный день</h3>
             <p>с&nbsp;8:00 до&nbsp;22:00</p>
             <span class="subscription__price-back">2700</span>
             <span class="subscription__price">2700</span>
-            <a class="subscription__button button" href="#">Купить абонемент</a>
+            <a class="subscription__button button" href="#" data-tab-button>Купить абонемент</a>
           </li>
         </ul>
 
@@ -143,21 +147,21 @@
             <p>72 занятия</p>
             <span class="subscription__price-back">25000</span>
             <span class="subscription__price">25000</span>
-            <a class="subscription__button button" href="#">Купить абонемент</a>
+            <a class="subscription__button button" href="#" data-tab-button>Купить абонемент</a>
           </li>
           <li class="subscription__card">
             <h3>Дневной</h3>
             <p>с&nbsp;8:00 до&nbsp;17:00</p>
             <span class="subscription__price-back">9000</span>
             <span class="subscription__price">9000</span>
-            <a class="subscription__button button" href="#">Купить абонемент</a>
+            <a class="subscription__button button" href="#" data-tab-button>Купить абонемент</a>
           </li>
           <li class="subscription__card">
             <h3>Полный день</h3>
             <p>с&nbsp;8:00 до&nbsp;22:00</p>
             <span class="subscription__price-back">15000</span>
             <span class="subscription__price">15000</span>
-            <a class="subscription__button button" href="#">Купить абонемент</a>
+            <a class="subscription__button button" href="#" data-tab-button>Купить абонемент</a>
           </li>
         </ul>
 
@@ -167,21 +171,21 @@
             <p>144 занятий</p>
             <span class="subscription__price-back">55000</span>
             <span class="subscription__price">55000</span>
-            <a class="subscription__button button" href="#">Купить абонемент</a>
+            <a class="subscription__button button" href="#" data-tab-button>Купить абонемент</a>
           </li>
           <li class="subscription__card">
             <h3>Дневной</h3>
             <p>с&nbsp;8:00 до&nbsp;17:00</p>
             <span class="subscription__price-back">19000</span>
             <span class="subscription__price">19000</span>
-            <a class="subscription__button button" href="#">Купить абонемент</a>
+            <a class="subscription__button button" href="#" data-tab-button>Купить абонемент</a>
           </li>
           <li class="subscription__card">
             <h3>Полный день</h3>
             <p>с&nbsp;8:00 до&nbsp;22:00</p>
             <span class="subscription__price-back">30000</span>
             <span class="subscription__price">30000</span>
-            <a class="subscription__button button" href="#">Купить абонемент</a>
+            <a class="subscription__button button" href="#" data-tab-button>Купить абонемент</a>
           </li>
         </ul>
       </section>
@@ -416,7 +420,7 @@
             </div>
             <div class="benefits__description">
               <h3>Собственная парковка</h3>
-              <p>Вы&nbsp;всегда найдете место для&nbsp; своей машины на&nbsp;нашей парковке</p>
+              <p>Вы&nbsp;всегда найдете место для&nbsp;своей машины на&nbsp;нашей парковке</p>
             </div>
           </div>
 
@@ -557,7 +561,7 @@
                 <input id="name" type="text" name="name" placeholder="Имя" required data-name>
 
                 <label class="visually-hidden" for="phone">Ведите номер телефона</label>
-                <input id="phone" type="tel" name="phone" placeholder="Телефон" required data-phone>
+                <input id="phone" type="tel" name="phone" placeholder="Телефон" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required data-phone>
               </div>
               <button class="form__button button" type="submit">Отправить</button>
             </form>

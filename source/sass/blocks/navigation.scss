@@ -8,9 +8,11 @@
   }
 
   @include vp-767 {
+    display: block;
     margin: 0;
     margin-bottom: 19px;
     font-size: 16px;
     line-height: 19px;
+    width: 130px;
   }
 }

@@ -625,19 +625,19 @@ template {
 }
 
 @font-face {
-  font-family: "Bebas Neue";
+  font-family: "BN";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: local("Bebas Neue"), url("../fonts/bebas-neue-regular.woff2") format("woff2"), url("../fonts/bebas-neue-regular.woff") format("woff");
+  src: local("BN"), url("../fonts/bebas-neue-regular.woff2") format("woff2"), url("../fonts/bebas-neue-regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Bebas Neue";
+  font-family: "BN";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: local("Bebas Neue"), url("../fonts/bebas-neue-bold.woff2") format("woff2"), url("../fonts/bebas-neue-bold.woff") format("woff");
+  src: local("BN"), url("../fonts/bebas-neue-bold.woff2") format("woff2"), url("../fonts/bebas-neue-bold.woff") format("woff");
 }
 
 *,
@@ -765,7 +765,7 @@ svg path {
 }
 
 .header__tel {
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 26px;
@@ -849,7 +849,7 @@ svg path {
 }
 
 .main-block__fitness-title h2 {
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 109px;
   font-weight: 700;
   line-height: 109px;
@@ -861,7 +861,7 @@ svg path {
 }
 
 .main-block__fitness-title span {
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 49px;
   font-weight: 400;
   line-height: 59px;
@@ -948,7 +948,7 @@ svg path {
 }
 
 .gym__description h2 {
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 49px;
   font-weight: 700;
   line-height: 49px;
@@ -973,6 +973,11 @@ svg path {
 }
 
 .gym__trainer {
+  height: 401px;
+  width: 660px;
+}
+
+.gym__trainer img {
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -988,13 +993,18 @@ svg path {
 }
 
 .gym__preview {
-  -o-object-fit: cover;
-  object-fit: cover;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  height: 228px;
+  width: 364px;
+}
+
+.gym__preview img {
+  -o-object-fit: cover;
+  object-fit: cover;
   height: 228px;
   width: 364px;
 }
@@ -1009,7 +1019,7 @@ svg path {
   z-index: 110;
 }
 
-.gym__button-img {
+.gym__play-button img {
   position: relative;
   width: 100px;
   height: 100px;
@@ -1102,7 +1112,7 @@ svg path {
 }
 
 .subscription h2 {
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 49px;
   font-weight: 700;
   line-height: 49px;
@@ -1212,7 +1222,14 @@ svg path {
   padding: 58px 70px 60px;
   max-width: 360px;
   background-color: #ffffff;
-  border: 7px solid transparent;
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 7px;
+}
+
+.subscription__card:active {
+  -o-border-image: -o-linear-gradient(301.18deg, #d10a42 0.85%, #00359f 100%) 1;
+  border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 1;
 }
 
 .subscription__card h3 {
@@ -1309,7 +1326,7 @@ svg path {
 }
 
 .crossfit__title h2 {
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 90px;
   font-weight: 700;
   line-height: 90px;
@@ -1410,7 +1427,7 @@ svg path {
 }
 
 .coaches h2 {
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 49px;
   font-weight: 700;
   line-height: 49px;
@@ -1595,7 +1612,7 @@ svg path {
 }
 
 .benefits h2 {
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 49px;
   font-weight: 700;
   line-height: 49px;
@@ -1759,7 +1776,7 @@ svg path {
 }
 
 .promo h2 {
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 49px;
   font-weight: 700;
   line-height: 49px;
@@ -1850,7 +1867,8 @@ svg path {
   padding: 23px 28px;
   color: #1c3374;
   max-width: 560px;
-  border: 7px solid transparent;
+  border-style: solid;
+  border-width: 7px;
   -o-border-image: -o-linear-gradient(301.18deg, #d10a42 0.85%, #00359f 100%) 1;
   border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 1;
 }
@@ -1892,7 +1910,7 @@ svg path {
 }
 
 .comments h2 {
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 49px;
   font-weight: 700;
   line-height: 49px;
@@ -1950,27 +1968,24 @@ svg path {
 .comments__button {
   position: absolute;
   z-index: 2;
-  top: 45.4%;
-  border: solid #afafaf;
-  border-width: 0 1px 1px 0;
-  padding: 12px;
-  width: 16px;
-  height: 16px;
+  top: 44.8%;
+  background-image: url("../img/svg/next.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 34px;
+  width: 18px;
+  height: 34px;
   cursor: pointer;
 }
 
 .comments__button--prev {
-  -webkit-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  transform: rotate(135deg);
-  left: 274px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  left: 268px;
 }
 
 .comments__button--next {
-  right: 274px;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  right: 268px;
 }
 
 .comments__button.swiper-button-disabled {
@@ -2027,7 +2042,7 @@ svg path {
 }
 
 .connection h2 {
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 49px;
   font-weight: 700;
   line-height: 49px;
@@ -2102,7 +2117,7 @@ svg path {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #74819c;
-  border-radius: 3px;
+  border-radius: 0;
   cursor: pointer;
 }
 
@@ -2565,6 +2580,11 @@ svg path {
     width: 678px;
   }
 
+  .gym__trainer img {
+    height: 345px;
+    width: 678px;
+  }
+
   .gym__video {
     top: auto;
     bottom: 100px;
@@ -2579,11 +2599,16 @@ svg path {
     width: 266px;
   }
 
+  .gym__preview img {
+    height: 167px;
+    width: 266px;
+  }
+
   .gym__play-button {
     top: 27.5%;
   }
 
-  .gym__button-img {
+  .gym__play-button img {
     height: 73px;
     width: 73px;
   }
@@ -2906,15 +2931,15 @@ svg path {
   }
 
   .comments__button {
-    top: 44.9%;
+    top: 43.7%;
   }
 
   .comments__button--prev {
-    left: 50px;
+    left: 45px;
   }
 
   .comments__button--next {
-    right: 50px;
+    right: 45px;
   }
 
   .comments__slide {
@@ -3131,6 +3156,12 @@ svg path {
     margin-bottom: 40px;
   }
 
+  .gym__trainer img {
+    height: 313px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
   .gym__video {
     position: relative;
     top: 0;
@@ -3141,6 +3172,11 @@ svg path {
   }
 
   .gym__preview {
+    height: 167px;
+    width: 100%;
+  }
+
+  .gym__preview img {
     height: 167px;
     width: 100%;
   }
@@ -3259,6 +3295,10 @@ svg path {
 
   .crossfit__date p {
     margin-top: 3px;
+  }
+
+  .crossfit img {
+    width: 100%;
   }
 
   .coaches {
@@ -3443,7 +3483,6 @@ svg path {
 
   .promo__main-card img {
     width: 100%;
-    height: 299px;
   }
 
   .promo__cards {
@@ -3485,18 +3524,18 @@ svg path {
   }
 
   .comments__button {
-    width: 10px;
-    height: 10px;
-    padding: 6px;
-    top: 55.5%;
+    width: 11px;
+    height: 20px;
+    background-size: 11px 20px;
+    top: 54.9%;
   }
 
   .comments__button--prev {
-    left: 17px;
+    left: 16px;
   }
 
   .comments__button--next {
-    right: 17px;
+    right: 16px;
   }
 
   .comments__slide {
@@ -3577,23 +3616,21 @@ svg path {
   }
 
   .footer__navigation {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (130px)[2];
-    grid-template-columns: repeat(2, 130px);
-    -ms-grid-rows: (-webkit-min-content)[3];
-    -ms-grid-rows: (min-content)[3];
-    grid-template-rows: repeat(3, -webkit-min-content);
-    grid-template-rows: repeat(3, min-content);
-    grid-column-gap: 31px;
-    grid-auto-flow: column;
+    display: block;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 31px;
+    -moz-column-gap: 31px;
+    column-gap: 31px;
     width: 100%;
     margin-bottom: 17px;
+    max-width: 400px;
   }
 
   .footer__logo {
     margin: 0;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
     width: 68px;
   }
 
@@ -3603,10 +3640,12 @@ svg path {
   }
 
   .navigation__item {
+    display: block;
     margin: 0;
     margin-bottom: 19px;
     font-size: 16px;
     line-height: 19px;
+    width: 130px;
   }
 
   .social__list {

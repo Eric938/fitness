@@ -206,7 +206,9 @@
   padding: 58px 70px 60px;
   max-width: 360px;
   background-color: $color-white;
-  border: 7px solid transparent;
+  border-color: $color-white;
+  border-style: solid;
+  border-width: 7px;
 
   @include vp-1199 {
     padding: 56px 112px 61px 111px;
@@ -222,6 +224,10 @@
     &:focus {
       border-image: linear-gradient(148.82deg, $color-crimson 0.85%, $color-smalt 100%) 1;
     }
+  }
+
+  &:active {
+    border-image: linear-gradient(148.82deg, $color-crimson 0.85%, $color-smalt 100%) 1;
   }
 }
 

@@ -91,48 +91,47 @@
 .comments__button {
   position: absolute;
   z-index: 2;
-  top: 45.4%;
-  border: solid $color-dark-grey;
-  border-width: 0 1px 1px 0;
-  padding: 12px;
-  width: 16px;
-  height: 16px;
+  top: 44.8%;
+  background-image: url("../img/svg/next.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 34px;
+  width: 18px;
+  height: 34px;
   cursor: pointer;
 
   @include vp-1199 {
-    top: 44.9%;
+    top: 43.7%;
   }
 
   @include vp-767 {
-    width: 10px;
-    height: 10px;
-    padding: 6px;
-    top: 55.5%;
+    width: 11px;
+    height: 20px;
+    background-size: 11px 20px;
+    top: 54.9%;
   }
 
   &--prev {
-    transform: rotate(135deg);
-    left: 274px;
+    transform: rotate(180deg);
+    left: 268px;
 
     @include vp-1199 {
-      left: 50px;
+      left: 45px;
     }
 
     @include vp-767 {
-      left: 17px;
+      left: 16px;
     }
   }
 
   &--next {
-    right: 274px;
-    transform: rotate(-45deg);
+    right: 268px;
 
     @include vp-1199 {
-      right: 50px;
+      right: 45px;
     }
 
     @include vp-767 {
-      right: 17px;
+      right: 16px;
     }
   }
 }

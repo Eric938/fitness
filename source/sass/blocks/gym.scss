@@ -105,6 +105,22 @@
 }
 
 .gym__trainer {
+  height: 401px;
+  width: 660px;
+
+  @include vp-1199 {
+    height: 345px;
+    width: 678px;
+  }
+
+  @include vp-767 {
+    height: 313px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+.gym__trainer img {
   object-fit: cover;
 
   @include vp-1199 {
@@ -148,12 +164,27 @@
 }
 
 .gym__preview {
-  object-fit: cover;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  height: 228px;
+  width: 364px;
+
+  @include vp-1199 {
+    height: 167px;
+    width: 266px;
+  }
+
+  @include vp-767 {
+    height: 167px;
+    width: 100%;
+  }
+}
+
+.gym__preview img {
+  object-fit: cover;
   height: 228px;
   width: 364px;
 
@@ -193,7 +224,7 @@
   }
 }
 
-.gym__button-img {
+.gym__play-button img {
   position: relative;
   width: 100px;
   height: 100px;
